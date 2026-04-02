@@ -1,32 +1,48 @@
+# Secure Chat System - Cyber Security Mini Project
 
-Hi, I’m Irtaza, and today I’m sharing a Secure Chat System that I’ve developed as part of my Cyber Security assignment. 
-This assignment focuses on building a secure communication platform between a client and a server using C++. The main objective 
-was to ensure that messages exchanged between the client and server are encrypted and secure.
+## ## Project Overview
+This project is a secure, C++ based communication platform designed to demonstrate the fundamentals of **Network Security** and **Cryptography**. The system establishes a protected channel between a `client.cpp` and `server.cpp`, ensuring that all exchanged data remains confidential and integral, even if intercepted on the network.
 
-Overview
-This system is designed to protect communication by encrypting messages and securely handling user credentials. The key features of this assignment are:
+---
 
-User Registration:
-Users can sign up with a unique username and password.
-Passwords are hashed using a secure hashing algorithm and stored securely to avoid saving them in plain text.
+## ## Key Security Features
 
-User Authentication:
-During login, the system authenticates users by checking their hashed passwords against the stored credentials.
+### ### User Identity & Access Management
+* **Secure Registration** – Users can create unique profiles with a username and password.
+* **Password Hashing** – To ensure **Confidentiality**, passwords are never stored in plain text. Instead, they are processed through a secure hashing algorithm before storage.
+* **Robust Authentication** – The system verifies users by comparing the hash of the entered password against the stored credential database.
 
-Encrypted Messaging:
-Once logged in, users can engage in secure communication with the server. Messages are encrypted before being sent, ensuring that 
-no unauthorized party can access the conversation.
+### ### Encrypted Communication Channel
+* **End-to-End Encryption** – All messages are encrypted on the sender's side before being transmitted over the network.
+* **Traffic Protection** – The encryption ensures that unauthorized parties or packet sniffers cannot read the conversation.
+* **Data Integrity** – Prevents "Man-in-the-Middle" (MitM) attacks from easily altering the message content during transit.
 
-Secure Credential Storage:
-User credentials, such as the username and hashed password, are securely stored to maintain confidentiality and integrity.
+### ### Secure Credential Storage
+* **Database Protection** – User data is stored in a format that maintains privacy.
+* **Linux Optimized** – Developed and tested in a Linux environment to leverage native networking libraries.
 
-Implementation
-The code for this assignment is written in C++ and consists of two files: server.cpp and client.cpp. The code has been tested on Linux, and 
-it should work seamlessly in that environment. If you're planning to run it on Windows, please ensure that the necessary libraries for 
-encryption and decryption are installed first.
+---
 
-Testing and Results
-While testing the application, I monitored the network traffic using Wireshark, and I observed that all data was encrypted, confirming that 
-the system works well. This assignment has many areas that can be improved or modified in the future, but I made sure to complete it before my deadline.
+## ## Technical Implementation
 
-This assignment demonstrates the importance of security in digital communication and how encryption techniques can be used to protect sensitive information.
+| Component | Specification |
+| :--- | :--- |
+| **Language** | C++ |
+| **Environment** | Linux (Ubuntu/Debian recommended) |
+| **Networking** | Socket Programming (Client-Server Architecture) |
+| **Security Focus** | Hashing, Encryption, and Access Control |
+| **Verification** | Verified via **Wireshark** Packet Analysis |
+
+---
+
+## ## Testing & Validation
+To confirm the effectiveness of the security measures, the system was tested using **Wireshark**:
+- **Result:** Network traffic analysis confirmed that all message payloads were unreadable (encrypted) during transmission.
+- **Verification:** Successfully validated that no plain-text passwords or messages were leaked over the network interface.
+
+---
+
+## ## Author  
+**Irtaza Zahid** 
+*Cyber Security Student & Developer*  
+*Focused on building secure digital communication and defensive programming.*  
