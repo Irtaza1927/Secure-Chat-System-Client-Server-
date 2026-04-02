@@ -1,18 +1,18 @@
 # Secure Chat System - Cyber Security Mini Project
 
-## ## Project Overview
+##  Project Overview
 This project is a secure, C++ based communication platform designed to demonstrate the fundamentals of **Network Security** and **Cryptography**. The system establishes a protected channel between a `client.cpp` and `server.cpp`, ensuring that all exchanged data remains confidential and integral, even if intercepted on the network.
 
 ---
 
-## ## Key Security Features
+##  Key Security Features
 
-### ### User Identity & Access Management
+###  User Identity & Access Management
 * **Secure Registration** – Users can create unique profiles with a username and password.
 * **Password Hashing** – To ensure **Confidentiality**, passwords are never stored in plain text. Instead, they are processed through a secure hashing algorithm before storage.
 * **Robust Authentication** – The system verifies users by comparing the hash of the entered password against the stored credential database.
 
-### ### Encrypted Communication Channel
+###  Encrypted Communication Channel
 * **End-to-End Encryption** – All messages are encrypted on the sender's side before being transmitted over the network.
 * **Traffic Protection** – The encryption ensures that unauthorized parties or packet sniffers cannot read the conversation.
 * **Data Integrity** – Prevents "Man-in-the-Middle" (MitM) attacks from easily altering the message content during transit.
@@ -23,7 +23,7 @@ This project is a secure, C++ based communication platform designed to demonstra
 
 ---
 
-## ## Technical Implementation
+##  Technical Implementation
 
 | Component | Specification |
 | :--- | :--- |
@@ -35,7 +35,7 @@ This project is a secure, C++ based communication platform designed to demonstra
 
 ---
 
-## ## Testing & Validation
+##  Testing & Validation
 To confirm the effectiveness of the security measures, the system was tested using **Wireshark**:
 - **Result:** Network traffic analysis confirmed that all message payloads were unreadable (encrypted) during transmission.
 - **Verification:** Successfully validated that no plain-text passwords or messages were leaked over the network interface.
